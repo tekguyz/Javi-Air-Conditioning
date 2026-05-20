@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  /* Glacier Custom Theme Palette */
+  --brand-blue: oklch(35% 0.12 245);
+  --brand-ice: oklch(75% 0.15 195);
+  --brand-navy: oklch(14% 0.04 240);
+  --brand-cloud: oklch(96% 0.015 200);
+  --surface-frost: oklch(99% 0.005 200);
+  --text-ink: oklch(18% 0.02 240);
+  --text-on-dark: oklch(95% 0.01 200);
+
+  --color-brand-blue: oklch(35% 0.12 245);
+  --color-brand-ice: oklch(75% 0.15 195);
+  --color-brand-navy: oklch(14% 0.04 240);
+  --color-brand-cloud: oklch(96% 0.015 200);
+  --color-surface-frost: oklch(99% 0.005 200);
+  --color-text-ink: oklch(18% 0.02 240);
+  --color-text-on-dark: oklch(95% 0.01 200);
+
+  /* Font mappings as requested */
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-display: var(--font-roboto), sans-serif;
+}
+
+/* Base custom defaults */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-surface-frost);
+  color: var(--color-text-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Custom glowing effects or cooling flow details matching the Glacier Air theme */
+.glacier-gradient {
+  background: linear-gradient(135deg, var(--color-brand-blue) 0%, oklch(20% 0.08 245) 100%);
+}
+
+.ice-gradient {
+  background: linear-gradient(135deg, oklch(93% 0.05 195) 0%, oklch(98% 0.02 195) 100%);
+}
+
+.text-ice-glow {
+  text-shadow: 0 0 12px oklch(75% 0.15 195 / 30%);
+}
+
+.card-frost {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid oklch(75% 0.15 195 / 15%);
+}
+
+/* Custom scrollbar to keep it air-clean and clinical */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface-frost);
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(75% 0.15 195 / 40%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-ice);
+}

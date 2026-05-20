@@ -1,0 +1,6 @@
+{
+  "name": "Javi Air Conditioning",
+  "description": "5.0-star HVAC installation, rapid repair, and advanced air filtration systems in Florida, principal Javier Lima.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
