@@ -11,21 +11,21 @@ export default function Icon() {
     (
       <div
         style={{
-          background: "#a5f3fc", // solid Ice Blue
+          background: "#0e2d3d", // Deep Navy background for high-contrast
           width: "100%",
           height: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          borderRadius: "50%",
+          borderRadius: "30%", // Slightly rounded square / squircle for better workspace presence
         }}
       >
         <svg
-          width="18"
-          height="18"
+          width="20"
+          height="20"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="#ffffff" // white wind lines
+          stroke="#a5f3fc" // Bright Ice Blue wind lines
           strokeWidth="3"
           strokeLinecap="round"
           strokeLinejoin="round"
